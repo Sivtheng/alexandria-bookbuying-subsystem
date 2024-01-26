@@ -2,5 +2,5 @@
 
 ## Versions
 
-Laravel 10
-Php 8.3.2
+- Laravel 10
+- Php 8.3.2
