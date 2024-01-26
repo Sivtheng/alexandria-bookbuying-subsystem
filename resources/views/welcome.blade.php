@@ -1,11 +1,10 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Alexandria - Buy</title>
-</head>
-<body>
-    Hello
-</body>
-</html>
+@extends('layout.headfoot')
+
+@section('title', 'Alexandria')
+
+@section('content')
+    <div class="container">
+        <h1>Welcome to My Website</h1>
+        <p>This is the home page content.</p>
+    </div>
+@endsection
