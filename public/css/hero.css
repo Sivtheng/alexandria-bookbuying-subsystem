@@ -1,0 +1,39 @@
+.hero-section {
+    background-color: #073861;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-section {
+    flex: 1;
+    color: #ffffff;
+    padding: 0 50px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.text-section h1 {
+    font-size: 40px;
+    margin: 5px 0; 
+}
+
+.image-section {
+    flex: 1;
+    position: relative; 
+    text-align: center;
+}
+
+.image-section img {
+    width: 500px;
+}
+
+.cat-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; 
+}
