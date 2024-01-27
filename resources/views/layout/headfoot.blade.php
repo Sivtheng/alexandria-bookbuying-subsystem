@@ -33,7 +33,6 @@
             </div>
             {{-- login register and cart --}}
             <div class="user-actions">
-                <a href="#">Login / Register</a>
                 <a href="#">Cart</a>
             </div>
         </div>
