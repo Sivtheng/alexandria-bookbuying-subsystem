@@ -6,6 +6,7 @@
         <h1>Welcome To</h1>
         <h1>Alexandria</h1>
         <h1>Book Marketplace</h1>
+        <button class="cta-button">List Books For Sale Here</button>
     </div>
     <div class="image-section">
         <img src="{{ asset('images/homebook.png') }}" alt="Homebook">
