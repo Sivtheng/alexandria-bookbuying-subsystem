@@ -4,7 +4,9 @@
         @foreach ($books as $book)
         <div class="book">
             <div class="image-container">
-                <img src="http://147.182.252.99/{{ $book['Url'] }}" alt="{{ $book['BookName'] }}">
+                <a href="{{ route('books.show', ['id' => $book['Id']]) }}">
+                    <img src="http://147.182.252.99/{{ $book['Url'] }}" alt="{{ $book['BookName'] }}">
+                </a>
             </div>
             <div class="book-details">
                 <h2>{{ $book['BookName'] }}</h2>

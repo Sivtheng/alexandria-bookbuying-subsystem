@@ -9,8 +9,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/', [BookController::class, 'index']);
 
-// Book-Detail-Buyer's View
-Route::get('/bookdetails', [BookController::class, 'book']);
-
-// Book-Detail-Buyer's shipping detail form
-Route::get('/shippingdetails', [ShippingController::class, 'ship']);
+// book details 
+Route::get('/books/{id}', [BookController::class, 'show'])->name('books.show');

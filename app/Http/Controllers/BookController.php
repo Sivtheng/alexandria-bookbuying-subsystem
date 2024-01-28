@@ -30,4 +30,14 @@ class BookController extends Controller
 
             return view('welcome', ['books' => $paginatedBooks]);
         }
+
+        public function show($id)
+        {
+            // Retrieve the book details based on the $id from the API
+            $response = Http::get('http://147.182.206.240:8083/api/book/' . $id);
+            $book = $response->json();
+    
+            // Pass the book details to the view
+            return view('bookdetails', compact('book'));
+        }
 }
