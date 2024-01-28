@@ -14,8 +14,7 @@ Route::get('/books/{id}', [BookController::class, 'show'])->name('books.show');
 
 // showing the order form for a specific book
 Route::get('/books/{id}/order', [OrderController::class, 'show'])->name('books.order');
-
-
+Route::post('/make-order', [OrderController::class, 'makeOrder'])->name('make.order');
 
 
 

@@ -1,5 +1,5 @@
 <div class="container">
-    <h1>New Arrivals</h1>
+    {{-- <h1>New Arrivals</h1>
     <div class="books-container">
         @foreach ($books as $book)
         <div class="book">
@@ -16,5 +16,6 @@
             </div>
         </div>
         @endforeach
-    </div>
+    </div> --}}
+    
 </div>

@@ -9,22 +9,25 @@
             <img src="http://147.182.252.99/{{ $book['Url'] }}" alt="{{ $book['BookName'] }}">
         </div>
         <div class="form-section">
-            <form action="{{ route('books.order', ['id' => $book['Id']]) }}" method="POST">
+            <form action="{{ route('make.order') }}" method="POST">
                 @csrf <!-- CSRF protection -->
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name"><br>
+                @method('POST') <!-- Use POST method -->
         
+                <label for="book_id">Book ID:</label><br>
+                <input type="text" id="book_id" name="book_id" value="{{ $book['Id'] }}" readonly><br>
+                
+                <label for="phone_number">Phone Number:</label><br>
+                <input type="text" id="phone_number" name="phone_number"><br>
+            
                 <label for="address">Address:</label><br>
                 <input type="text" id="address" name="address"><br>
-        
-                <label for="phone">Phone Number:</label><br>
-                <input type="text" id="phone" name="phone"><br>
-        
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br>
-        
-                <button type="submit">Confirm Order</button>
+            
+                <label for="total_book">Total Books:</label><br>
+                <input type="text" id="total_book" name="total_book"><br>
+                
+                <button type="submit">Submit</button>
             </form>
         </div>
+
 </div>
 @endsection
