@@ -46,9 +46,15 @@
     font-size: 22px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-bottom: 30px;
+    text-decoration: none; /* Remove underline from the link */
+    display: inline-block; /* Ensure the button behaves as a block element */
 }
 
 .order-button:hover {
     background-color: #ff7f00;
+}
+
+.order-link {
+    color: #fff; /* Set link color to match button text color */
+    text-decoration: none; /* Remove underline from the link */
 }

@@ -22,8 +22,8 @@
         <div class="header-container">
             {{-- logo of alexandria --}}
             <div class="logo">
-                <img src="{{ asset('images/alexandrialogo.png') }}" alt="Logo">
-                <p>Alexandria</p>
+                <a href="/"><img src="{{ asset('images/alexandrialogo.png') }}" alt="Logo"></a>
+                <a href="/"><p>Alexandria</p></a>
             </div>
             {{-- the search bar in the middle --}}
             <div class="search-container">

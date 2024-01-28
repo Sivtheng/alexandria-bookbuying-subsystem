@@ -17,6 +17,8 @@
             <p><strong>Book ID:</strong> {{ $book['Id'] }}</p>
         </div>
     </div>
-    <button class="order-button">Order Now</button>
+    <button class="order-button">
+        <a href="{{ route('books.order', ['id' => $book['Id']]) }}" class="order-link">Order Now</a>
+    </button>
 </div>
 @endsection
