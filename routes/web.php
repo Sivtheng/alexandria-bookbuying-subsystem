@@ -11,3 +11,5 @@ Route::get('/', [BookController::class, 'index']);
 
 // book details 
 Route::get('/books/{id}', [BookController::class, 'show'])->name('books.show');
+
+
