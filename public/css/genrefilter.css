@@ -1,0 +1,27 @@
+.genre-filters {
+    margin-bottom: 20px;
+    padding-left: 100px;
+}
+
+.genre-filters button {
+    background-color: orange;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.genre-filters button:hover {
+    background-color: #ff7f00;
+}
+
+.genre-filters button:focus {
+    outline: none;
+}
+
+.genre-filters button.active {
+    background-color: #ff7f00;
+}
