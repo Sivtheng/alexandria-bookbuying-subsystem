@@ -4,18 +4,46 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Pagination\Paginator;
+use Illuminate\Support\Collection;
 
 
 class BookController extends Controller
 {
-    public function index()
-        {
-            $response = Http::get('http://147.182.206.240:8083/api/listbook'); 
-            $books = $response->json()['data']; 
+    // public function index()
+    //     {
+    //         $response = Http::get('http://147.182.206.240:8083/api/listbook'); 
+    //         $books = $response->json()['data']; 
 
-            return view('welcome', ['books' => $books]);
-        }
+    //         return view('welcome', ['books' => $books]);
+    //     }
+    
+    public function index()
+    {
+    // Fetch data from the external API
+    $response = Http::get('http://147.182.206.240:8083/api/listbook'); 
+    $books = $response->json()['data']; 
+
+    // Paginate the data manually
+    $perPage = 10; // Number of items per page
+    $totalPages = ceil(count($books) / $perPage); // Calculate total pages
+    $currentPage = request()->get('page') ?? 1; // Get current page or default to 1
+
+    // Calculate the starting index for the slice
+    $startIndex = ($currentPage - 1) * $perPage;
+
+    // Slice the array to get the current page's data
+    $paginatedBooks = array_slice($books, $startIndex, $perPage);
+
+    // Pass the paginated data to the view
+    return view('welcome', [
+        'books' => $paginatedBooks,
+        'totalPages' => $totalPages,
+        'currentPage' => $currentPage,
+        'perPage' => $perPage
+    ]);
+    }
 
 
     public function show($id)

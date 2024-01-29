@@ -10,6 +10,7 @@
         </div>
         <div class="form-section">
             <form action="{{ route('make.order') }}" method="POST">
+            {{-- <form action="http://147.182.206.240:8083/api/makeOrder" method="POST"> --}}
                 @csrf <!-- CSRF protection -->
                 @method('POST') <!-- Use POST method -->
         

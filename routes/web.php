@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Route;
 // First page (use for view all book, Landing page for buyer)
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/', [BookController::class, 'index']);
+Route::get('/', [BookController::class, 'index'])->name('books.index');
 
 // book details 
 Route::get('/books/{id}', [BookController::class, 'show'])->name('books.show');

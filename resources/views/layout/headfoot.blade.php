@@ -9,8 +9,8 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bookdisplay.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/pagination.css') }}" rel="stylesheet">
     <link href="{{ asset('css/genrefilter.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/pagination.css') }}" rel="stylesheet">
     {{-- Inter font --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +28,7 @@
             {{-- the search bar in the middle --}}
             <div class="search-container">
                 <div class="search-container">
-                    <input type="text" placeholder="Search by title, author or ISBN here...">
+                    <input type="text" placeholder="This is just UI, there's no search feature (Yet)">
                     <button type="submit">
                         <img src="{{ asset('images/search.png') }}" alt="searchsymbol">
                     </button>
@@ -36,7 +36,7 @@
             </div>
             {{-- login register and cart --}}
             <div class="user-actions">
-                <a href="#">Cart</a>
+                <a href="#">Cart (There's no cart)</a>
             </div>
         </div>
     </header>
