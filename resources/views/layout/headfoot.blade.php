@@ -28,7 +28,7 @@
             {{-- the search bar in the middle --}}
             <div class="search-container">
                 <div class="search-container">
-                    <input type="text" placeholder="This is just UI, there's no search feature (Yet)">
+                    <input type="text" placeholder="This is just UI, there's no search feature">
                     <button type="submit">
                         <img src="{{ asset('images/search.png') }}" alt="searchsymbol">
                     </button>
@@ -36,7 +36,7 @@
             </div>
             {{-- login register and cart --}}
             <div class="user-actions">
-                <a href="#">Cart (There's no cart)</a>
+                <a href="#">(There's no cart)</a>
             </div>
         </div>
     </header>
