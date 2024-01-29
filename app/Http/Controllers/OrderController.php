@@ -51,7 +51,7 @@ class OrderController extends Controller
         // Check the response and handle accordingly
         if ($response->successful()) {
             // Order successful
-            return response()->json(['message' => 'Order placed successfully'], 200);
+            return view('order-success');
         } else {
             // Order failed
             return response()->json(['message' => 'Failed to place order'], 500);
