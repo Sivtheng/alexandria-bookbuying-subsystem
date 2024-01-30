@@ -1,6 +1,6 @@
 @extends('layout.headfoot')
 
-@section('title', 'Alexandria')
+@section('title', 'Order')
 @section('content')
 <link href="{{ asset('css/formpage.css') }}" rel="stylesheet">
 <div class="container">

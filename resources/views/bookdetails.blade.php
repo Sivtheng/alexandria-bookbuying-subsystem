@@ -1,6 +1,6 @@
 @extends('layout.headfoot')
 
-@section('title', 'Alexandria')
+@section('title', 'Details')
 <link href="{{ asset('css/bookdetails.css') }}" rel="stylesheet">
 @section('content')
 <div class="container">
