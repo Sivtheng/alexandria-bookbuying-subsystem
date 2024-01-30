@@ -1,7 +1,3 @@
-@extends('layout.headfoot')
-@section('title', 'Alexandria')
-
-@section('Thanks')
 <head>
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet">
 </head>
@@ -47,8 +43,7 @@
                 <div style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto;">
                   <i class="checkmark">✓</i>
                 </div>
-                  <h1>Success</h1> 
-                  <p>We received your purchase request;<br/> we'll be in touch shortly!</p>
+                    <h1>Success</h1> 
+                    <p>We received your purchase request;<br/> we'll be in touch shortly!</p>
                 </div>
         </div>
-@endsection
